@@ -1,0 +1,637 @@
+body {
+	font-family: Source Sans Pro, helvetica, arial;
+	font-size: 14px;
+	color:white;
+	padding: 0;
+	margin: 0;
+	top: 0;
+}
+nav {
+	
+	margin: 0px auto;
+}
+
+
+div#nav-right {
+	float: right;
+	display: inline;
+	padding-top: 70px;
+}
+
+ul>li {
+	list-style: none;
+	display: inline;
+	font-weight: 100;
+	font-size: .9em;
+	letter-spacing: .2em;
+}
+li>a {
+	color: white;
+	text-decoration: none;
+	padding-right: 25px;
+}
+
+/*Display @ 320px X 480px A.K.A iPhone 4 screen size*/
+@media screen and (min-width: 20em){
+
+
+	/* Nav Section */
+	div#nav-right {
+
+	visibility: hidden;
+	display: none;
+
+	}
+
+	div#logo>img{
+	float: left;
+	padding-top: 1em;
+	max-width: 16em;
+	}
+
+	/* Hero Section */
+	section#Hero {
+		min-height: 480px;
+		background: url(../images/homeBG_small.png) no-repeat top center;
+		background-color: #263746;
+		background-size: cover;
+
+	}
+	#Hero>h1 {
+		font-size: 2em;
+	}
+
+	h1.topTitle {
+		padding-top: 6em;
+	}
+	button {
+		margin-top: 4em;
+	}
+	div#more-btn>img {
+		padding-top: 2em;
+	}
+
+	#About>div#container>h2 {
+		margin-top: 2em;
+	}
+
+	#About>div#container>p {
+		margin-top: .7em;
+		font-size: 1.2em;
+	}
+
+	#About>div article {
+		margin-top: .7em;
+	}
+
+	article#clmSize {
+		width: 100%;
+	}
+
+	article#clmSize.art-rt {
+		margin-bottom: 2em;
+	}
+
+	/*About Section */
+	article#clmSize {
+	line-height: 1.7em;
+	display: inline-block;
+	letter-spacing: .03em;
+
+	}
+
+
+	/* Goals Section */
+	section#Goals {
+		padding-top: 2em;
+	}
+
+	#Goals>div#container>h2 {
+		font-weight: 300;
+		letter-spacing: .1em;
+	}
+
+	article#g1 {
+	font-size: 1.2em;
+	letter-spacing: .09em;
+	line-height: 1.8em;
+	}
+
+	/*Speakers Section*/
+	#Speakers>div#container>h2 {
+		font-weight: 100;
+		letter-spacing: .2em;
+		margin-top: 2em;
+		padding-bottom: 1em;
+
+	}
+
+
+
+	div#imgRow1>img, div#imgRow2>img{
+		width: 100%;
+		max-height: 23em;
+		border:none;
+	}
+
+	#nameRow1, #nameRow2{
+		visibility: hidden;
+		display: none;
+
+	}
+	h2#speakerName {
+		font-weight: 100;
+		letter-spacing: .1em;
+	}
+
+	/*Agenda Section */
+
+	section#Agenda>div#container>h2 {
+		padding: 1em 0;
+		margin: 0;
+		color: #263746;
+		font-weight: 400;
+		letter-spacing: .2em;
+	}
+
+	section#Agenda>div#container>table>tbody>tr>td {
+		color: #263746;
+		font-weight: 300;
+		padding-bottom: 20px;
+		letter-spacing: .09em;
+	}
+
+	td#time {
+		vertical-align: text-top;
+	}
+
+	h3#agendaHeader {
+		color: #00c189;
+		padding: 1em 0;
+		margin: 1em 0;
+		font-size: 1em;
+		font-weight: 400;
+		letter-spacing: .1em;
+	}
+
+	/*Venue Section */
+
+	div#venueAddress {
+		padding: 2em 4em;
+		text-align: center;
+		display: inline-block;
+		color: #263746;
+		overflow: auto;
+	}
+
+	div#venueAddress>h2 {
+		padding-bottom: 50px;
+		font-weight: 300;
+		letter-spacing: .2em;
+	}
+
+
+	/*Sponsor Section */
+	div#AGSIW>p {	
+		display: block;
+		letter-spacing: .04em;
+		
+	}
+
+	footer#Sponsors>div#container>h2 {
+		padding-top: 2em;
+		font-weight: 400;
+		letter-spacing: .13em;
+	}
+
+	div#AGSIW>img {
+		clear: both;
+		display: inline;
+	}
+
+	footer#Sponsors>div#container>p {
+		margin-top: 10em;
+	}
+
+	div#container {
+		margin: 0 auto;
+		width: 20em;
+		padding-bottom: 1em;
+	}
+
+}/* <--END iPhone 4 mobile size*/
+
+/*Display @ 375px X 627px A.K.A iPhone 6 screen size*/
+@media screen and (min-width: 23em){
+
+	div#logo>img{
+	padding-top: 2em;
+	max-width: 17em;
+	}
+
+	section#Hero {
+		min-height: 600px;
+	}
+
+	h1.topTitle {
+		padding-top: 7.5em;
+	}
+	div#reg-btn {
+		padding-top: 5em;
+	}
+
+	div#more-btn {
+		padding-top: 3em;
+	}
+
+	/*About Section*/
+
+	
+	div#container {
+	margin: 0 auto;
+	width: 23em;
+	padding-bottom: 1em;
+}
+
+}/* <--- End iPhone 6 screen size */
+
+
+/*Display @ 414px X 736px A.K.A iPhone 6 plus screen size*/
+@media screen and (min-width: 25em){
+
+	div#logo>img{
+	max-width: 19em;
+	}
+	section#Hero {
+		min-height: 600px;
+	}
+
+	div#reg-btn {
+		padding-top: 5em;
+	}
+
+	div#more-btn {
+		padding-top: 3em;
+	}
+
+	/*About Section*/
+	#About>div#container>h2 {
+		font-size: 3em;
+		margin-top: 1em;
+	}
+	#About>div#container>p {
+		font-size: 1.6em;
+		line-height: 2em;
+	}
+
+	article#clmSize {
+		font-size: 1.33em;
+	}
+	
+
+	/* Goals Section */
+	#Goals>div#container>h2 {
+		font-size: 3em;
+	}
+
+	article#g1 {
+		font-size: 1.6em;
+	}
+
+	/*Speaker Section */
+	#Speakers>div#container>h2 {
+		font-size: 2.5em;
+	}
+
+	h2#speakerName {
+		font-size: 1.8em;
+	}
+
+	div#imgRow1>img, div#imgRow2>img {
+		max-height: 25em;
+	}
+
+	/*Agenda Section */
+
+	section#Agenda>div#container>h2 {
+		font-size: 3em;
+	}
+
+	section#Agenda>div#container>table>tbody>tr>td {
+		font-size: 1.3em;
+		letter-spacing: .07em;
+	}
+	h3#agendaHeader {
+		font-size: 1.4em;
+	}
+	div#container {
+	margin: 0 auto;
+	width: 26em;
+	padding-bottom: 1em;
+	}
+
+	/* Venue Section */
+	div#venueAddress {
+		font-size: 1.6em;
+		padding: 1em;
+	}
+
+	/* Sponsor */
+	footer#Sponsors>div#container>h2 {
+
+		font-size: 2em;
+	}
+
+	div#AGSIW>img {
+		width: 90%;
+	}
+
+	div#AGSIW>p {
+		font-size: 1.5em;
+		padding-top: 1em;
+	}
+
+	footer#Sponsors>div#container>p {
+		margin-top: 2.3em;
+		font-weight: 100;
+		font-size: 1.32em;
+	}
+
+}/* <--- End iPhone 6 plus screen size */
+
+/*Display @ 600x X 1024px screen size*/
+@media screen and (min-width: 37em){
+
+	div#logo>img{
+	max-width: 19em;
+	}
+	section#Hero {
+		min-height: 1000px;
+	}
+
+	div#reg-btn {
+		padding-top: 5em;
+	}
+
+	div#more-btn {
+		padding-top: 3em;
+	}
+
+	/*About Section*/
+	#About>div#container>h2 {
+		font-size: 3em;
+		margin-top: 1em;
+	}
+	#About>div#container>p {
+		font-size: 1.6em;
+		line-height: 2em;
+	}
+
+	article#clmSize {
+		font-size: 1.33em;
+	}
+	
+
+	/* Goals Section */
+	#Goals>div#container>h2 {
+		font-size: 3em;
+	}
+
+	article#g1 {
+		font-size: 1.6em;
+	}
+
+	/*Speaker Section */
+	#Speakers>div#container>h2 {
+		font-size: 2.5em;
+	}
+
+	h2#speakerName {
+		font-size: 1.8em;
+	}
+
+	div#imgRow1>img, div#imgRow2>img {
+		max-height: 25em;
+	}
+
+	/*Agenda Section */
+
+	section#Agenda>div#container>h2 {
+		font-size: 3em;
+	}
+
+	section#Agenda>div#container>table>tbody>tr>td {
+		font-size: 1.3em;
+		letter-spacing: .07em;
+	}
+	h3#agendaHeader {
+		font-size: 1.4em;
+	}
+
+	/* Venue Section */
+	div#venueAddress {
+		font-size: 1.6em;
+		padding: 1em;
+	}
+
+	/* Sponsor */
+	footer#Sponsors>div#container>h2 {
+
+		font-size: 2em;
+	}
+
+	div#AGSIW>img {
+		width: 90%;
+	}
+
+	div#AGSIW>p {
+		font-size: 1.5em;
+		padding-top: 1em;
+	}
+
+	footer#Sponsors>div#container>p {
+		margin-top: 2.3em;
+		font-weight: 100;
+		font-size: 1.32em;
+	}
+
+	div#container {
+	margin: 0 auto;
+	width: 36em;
+	padding-bottom: 1em;
+	}
+
+}/* <--- End 600 x 1024 screen size */
+
+
+#Hero>h1 {
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: .2em;
+
+}
+h1.topTitle {
+	text-align: center;
+}
+
+div#reg-btn {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+button{
+	border-width: 0;
+	background-color: #EC0B43;
+}
+button>h2 {
+	color: white;
+	text-align: center;
+	font-weight: 100;
+	letter-spacing: .5em;
+	width: 220px;
+	padding: 0;
+}
+
+div#more-btn {
+	width: 5em;
+	margin: 2em auto;
+}
+div#more-btn>a>img {
+	height: 25px;
+	
+}
+
+section#About {
+	color: #263746;
+}
+/*#About>div.container {
+	margin: 0 auto;
+}*/
+#About>div#container>h2 {
+	font-weight: 300;
+	letter-spacing: .1em;
+}
+
+#About>div#container>p {
+	font-weight: 500;
+	line-height: 2em;
+
+}	
+#About>div article {
+	font-weight: 100;
+}
+
+article#clmSize.art-rt {
+
+}
+
+section#Goals {
+	background-color: #00c189;
+	overflow: hidden;
+	margin-bottom: 0;
+
+}
+
+section#Goals>h2, article#g1{
+	
+	font-weight: 100;
+	
+}
+
+
+
+section#Speakers {
+	overflow: hidden;
+	margin-top: 0;
+	border-width: 0;
+	background-color: #263746;
+	background-size: cover;
+}
+
+#Speakers>div#container {
+	padding-bottom: 70px;
+}
+
+#Speakers>div#container>h3{
+	max-width: 23.5%;
+	padding:0;
+	margin: 0;
+	}
+
+
+div#nameRow1>ul, div#nameRow2>ul{
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+div#nameRow1>ul>li>h3, div#nameRow2>ul>li>h3  {
+	display: inline-block;
+	font-weight: 100;
+	font-size: 1em;
+	width: 23.5%;
+}
+
+
+
+section#Agenda>div#container>ul {
+	padding:0;
+}
+section#Agenda>div#container>ul>li {
+	color: #263746;
+	width: 60%;
+	padding-right: 70px;
+	font-weight: 600;
+}
+section#Agenda>div#container>ul>li>p {
+	display: inline;
+	width: 60%;
+
+}
+
+section#Agenda>div#container>table {
+	width: 100%;
+}
+
+
+section#Agenda>div#container>h3 {
+	
+}
+
+section#Venue {
+	background-color: #f7f7f7;
+	width: 100%;
+	min-height: 440px;
+	clear:both;
+}
+
+
+
+div#venueAddress>h1 {
+	font-weight: 400;
+	letter-spacing: .1em;
+}
+div#venueAddress>address {
+	line-height: 1.6em;
+}
+div#map {
+	display:inline;
+	float: right;
+}
+
+div#map>img {
+	
+	background-color: #898989;
+}
+
+footer#Sponsors {
+	overflow: none;
+	background-color: #ec0b43;
+}
+
+
+
+
+
